@@ -1,5 +1,19 @@
 naive_bayes.BernoulliNB()
-    priors:     array-like,shape(n-classes), default=None
-    
+    alpha:      float, default=1.0
+                It stands for the smooth factor. If alpha = 1, it means Laplace smooth.
+    binarize:   float or None, default=0.0
+                It stands for the threshold value of binarizing. If binarize = 0, it means all the features are binary values.
+    fit_prior:  boolean, default=True
+                It stands for whether to learn class prior probabilities or not.
+    class_prior:array-like,shape[n_classes], default=None
+                It stands for the prior probabilities of the classes. 
 naive_bayes.GaussianNB()
+    priors:     array-like,shape[n_classes], default=None
+                It stands for prior probabilities of the classes. 
 naive_bayes.MultinomialNB()
+    alpha:      float, default=1.0
+                It stands for the smooth factor. If alpha = 1, it means Laplace smooth.
+    fit_prior:  boolean, default=True
+                It stands for whether to learn class prior probabilities or not.
+    class_prior:array-like,shape[n_classes], default=None
+                It stands for the prior probabilities of the classes. 
