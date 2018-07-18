@@ -1,0 +1,5 @@
+naive_bayes.BernoulliNB()
+    priors:     array-like,shape(n-classes), default=None
+    
+naive_bayes.GaussianNB()
+naive_bayes.MultinomialNB()
