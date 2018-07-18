@@ -1,0 +1,4 @@
+When an attribute doesn't merge together with a class, the conditional probability will be 0. And to avoid this affection, we 
+always use laplacian correction.
+                  P(c) = (|Dc|+1)/(|D|+N)     N is the number of classes
+                  P(xi|c) = (|Dc,xi|+1)/(|Dc|+Ni)     Ni is the probable value number of attribute i
